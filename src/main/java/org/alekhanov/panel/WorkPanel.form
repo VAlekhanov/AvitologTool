@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="org.alekhanov.panel.WorkPanel">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="26" y="20" width="866" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-328966"/>
+      <minimumSize width="500" height="300"/>
+      <preferredSize width="900" height="500"/>
+    </properties>
+    <border type="bevel-raised">
+      <color color="-16777216"/>
+    </border>
+    <children>
+      <grid id="8310a" binding="leftPanel" layout-manager="GridLayoutManager" row-count="4" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="line"/>
+        <children>
+          <scrollpane id="8c66b" binding="fromPanel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="empty"/>
+            <children>
+              <component id="381a5" class="javax.swing.JTree" binding="fromTree">
+                <constraints/>
+                <properties/>
+              </component>
+            </children>
+          </scrollpane>
+          <scrollpane id="42ad1" binding="toPanel">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="empty"/>
+            <children>
+              <component id="be625" class="javax.swing.JTree" binding="toTree">
+                <constraints/>
+                <properties/>
+              </component>
+            </children>
+          </scrollpane>
+          <component id="300bd" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="From:"/>
+            </properties>
+          </component>
+          <component id="89faa" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="To:"/>
+            </properties>
+          </component>
+          <component id="e3626" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="d9bd2" class="javax.swing.JTextField" binding="textField2" default-binding="true">
+            <constraints>
+              <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+        </children>
+      </grid>
+      <scrollpane id="ec4a1" binding="rightPanel">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="line"/>
+        <children>
+          <component id="832f4" class="javax.swing.JTable" binding="table">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+      <toolbar id="df26" binding="bottomPanel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="20"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="line"/>
+        <children>
+          <component id="23bc2" class="javax.swing.JButton" binding="CSVButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="CSV"/>
+              <toolTipText value="Создать csv файл"/>
+            </properties>
+          </component>
+          <component id="2a86e" class="javax.swing.JToolBar$Separator">
+            <constraints/>
+            <properties/>
+          </component>
+          <component id="30c7e" class="javax.swing.JButton" binding="excelButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Excel"/>
+              <toolTipText value="Создать excel файл"/>
+            </properties>
+          </component>
+          <hspacer id="ff7a6">
+            <constraints/>
+          </hspacer>
+          <hspacer id="566f1">
+            <constraints/>
+          </hspacer>
+          <component id="5dc82" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <text value="Process: "/>
+            </properties>
+          </component>
+          <component id="f9729" class="javax.swing.JProgressBar" binding="progressBar1" default-binding="true">
+            <constraints/>
+            <properties/>
+          </component>
+          <component id="5c1c5" class="javax.swing.JToolBar$Separator">
+            <constraints/>
+            <properties/>
+          </component>
+          <component id="10de3" class="javax.swing.JButton" binding="helpButton">
+            <constraints/>
+            <properties>
+              <defaultCapable value="false"/>
+              <text value="(?)"/>
+              <toolTipText value="Помощь"/>
+            </properties>
+          </component>
+        </children>
+      </toolbar>
+    </children>
+  </grid>
+</form>
