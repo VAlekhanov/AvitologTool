@@ -3,6 +3,7 @@ package org.alekhanov.panel;
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
 import com.intellij.uiDesigner.core.Spacer;
+import org.alekhanov.entities.Link;
 
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
@@ -67,6 +68,18 @@ public class WorkPanel extends JFrame {
             public void keyReleased(KeyEvent keyEvent) {
                 super.keyReleased(keyEvent);
                 textField2.setText((String) toTree.getLastSelectedPathComponent().toString());
+            }
+        });
+        CSVButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+
+            }
+        });
+        excelButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+
             }
         });
     }
@@ -141,7 +154,7 @@ public class WorkPanel extends JFrame {
     private JButton helpButton;
     private JTextField textField1;
     private JTextField textField2;
-    private String helpMessage = "ИНСТРУКЦИЯ ПО ИСПОЛЬЗОВАНИЮ AVITO LINKS FORMATTER\n" +
+    private String helpMessage = "ИНФОРМАЦИЯ ПО ИСПОЛЬЗОВАНИЮ AVITO LINKS FORMATTER\n" +
             "\t- В окне \"From:\" выбрать файл с исходным файлом с ссылками.\n" +
             "\t- В окне \"To:\" выбрать папку, где будет сохранен полученный файл.\n" +
             "\t- Кнопка \"CSV\" - формирование файла в формате csv.\n" +
