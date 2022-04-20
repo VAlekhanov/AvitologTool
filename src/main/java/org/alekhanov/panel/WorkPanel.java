@@ -9,7 +9,6 @@ import javax.swing.border.TitledBorder;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumn;
 import javax.swing.table.TableModel;
-import javax.swing.tree.DefaultTreeCellRenderer;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
@@ -111,7 +110,7 @@ public class WorkPanel extends JFrame {
         toTree.setModel(treeModel);
         textField1.setText(root.getAbsolutePath());
         textField2.setText(root.getAbsolutePath());
-//        fromTree.setCellRenderer(new DefaultTreeCellRenderer().);
+//        fromTree.setCellRenderer(new AvitoCellRenderer());
     }
 
     private void setBottomPanel() {
