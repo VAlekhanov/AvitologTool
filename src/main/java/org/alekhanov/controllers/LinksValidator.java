@@ -3,6 +3,8 @@ package org.alekhanov.controllers;
 import org.alekhanov.entities.Link;
 
 import javax.swing.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class LinksValidator {
     public LinksValidator() {
@@ -14,23 +16,33 @@ public class LinksValidator {
                 if (null != link.getIcon()) {
                     return true;
                 }
-//                Загрузка иконки по умолчанию
+                // TODO: 21.04.2022     Загрузка иконки по умолчанию
 //                link.setIcon(defaultImageIcon());
                 return true;
             }
-//            Загрузка имени по умолчанию
+            // TODO: 21.04.2022   Загрузка имени по умолчанию
 //            link.setName(nameDetecting());
             return true;
         }
         return false;
     }
 
-    private ImageIcon defaultImageIcon(){
+    private ImageIcon defaultImageIcon() {
         return null;
     }
 
-    private String nameDetecting(){
+    private String nameDetecting() {
         return null;
+    }
+
+    public List<Link> readTxtFile() {
+        List<Link> links = new ArrayList();
+        return links;
+    }
+
+    public List<Link> readWordFile() {
+        List<Link> links = new ArrayList();
+        return links;
     }
 
 }
